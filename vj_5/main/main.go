@@ -32,12 +32,12 @@ func main() {
 
 
 	// verificiraj
-	fmt.Println("Valid?", tx.Verify(pubKey))
+	fmt.Println("Valid? ", tx.Verify(pubKey))
 
 
 	// da li je možda neki drugi korisnik potpisao?
 	privKey2 := GenerateKey()
-	fmt.Println("Valid?", tx.Verify(privKey2.PublicKey))
+	fmt.Println("Valid? ", tx.Verify(privKey2.PublicKey))
 
 }
 
@@ -53,4 +53,35 @@ func GenerateKey() (privKey *ecdsa.PrivateKey)  {
 		os.Exit(1)
 	}
 	return
+}
+
+// Primjer potpisa transakcije
+func sign_example(){
+	privKey := GenerateKey()
+	pubKey := privKey.PublicKey
+
+	fmt.Println("Private Key :")
+	fmt.Printf("%x \n", privKey)
+	fmt.Println("Public Key :")
+	fmt.Printf("%x \n", pubKey)
+
+	tx := core.NewTransaction(GenerateNewAddress(), GenerateNewAddress(), 20)
+	signHash := tx.TxHash()
+
+	// Potpisuje hash transakcije
+	r, s, err := ecdsa.Sign(rand.Reader, privKey, signHash[:])
+
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	// Spaja bytove obih vrijednosti u jedan byte niz
+	signature := append(r.Bytes(), s.Bytes()...)
+	fmt.Printf("Signature : %x\n", signature)
+
+	// Verificiraj je li korisnik s pubKey potpisao signHash
+	status := ecdsa.Verify(&pubKey, signHash[:], r, s)
+	fmt.Println(status) // true
+
 }
