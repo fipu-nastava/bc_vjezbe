@@ -1,4 +1,4 @@
-package v6
+package main
 
 import "github.com/multiformats/go-multiaddr"
 

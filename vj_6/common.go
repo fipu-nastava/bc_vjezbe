@@ -1,4 +1,4 @@
-package v6
+package main
 
 const HashLength = 32
 type Hash [HashLength]byte
