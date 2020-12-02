@@ -28,3 +28,13 @@ Korištenje paketa:
 
 Zadatak za vježbu nalazi se u [Vj_6_Message](vj_6/Vj_6_Message.md)
 
+
+
+
+
+#### Vježbe 7
+
+Slanje poruka [Message](vj_7/message.go) u peer-to-peer mreži
+
+
+
