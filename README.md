@@ -38,3 +38,11 @@ Slanje poruka [Message](vj_7/message.go) u peer-to-peer mreži
 
 
 
+
+
+#### Vježbe 8
+
+Jednostavni primjeri u solidity-u.
+
+
+
