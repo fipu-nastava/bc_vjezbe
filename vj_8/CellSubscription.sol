@@ -11,10 +11,14 @@ contract CellSubscription {
         monthlyCost = cost;
     }
 
-    // function that allows the subscriber to make a payment towards their accoun
+    // function that allows the subscriber to make a payment towards their account
     function makePayment() payable public {
-    
-    }
+
+		}
+
+		// function that allows the subscriber to make a payment towards their account
+		// without calling the makePayment function, rather just by simply transfering the funds
+		function () external payable {}
 
     // allows an account to be emptied to the caller of widhdrawBalance
     function withdrawBalance() public {
