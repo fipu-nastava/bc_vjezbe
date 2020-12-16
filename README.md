@@ -46,3 +46,8 @@ Jednostavni primjeri u solidity-u.
 
 
 
+#### Vježbe 9
+
+Solidity funkcije, vidljivost i ponašanjefunkcija.
+
+Zadatak za vježbu nalazi se u [Zadatak_coin](vj_9/Zadatak_coin.md)

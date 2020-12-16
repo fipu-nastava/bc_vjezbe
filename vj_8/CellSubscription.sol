@@ -1,4 +1,4 @@
-pragma solidity >=0.4.22 <0.7.0;
+pragma solidity >=0.4.22 <0.6.0;
 
 /*
 The subscriber pays a monthly fee in ether to the contract,
@@ -14,11 +14,11 @@ contract CellSubscription {
     // function that allows the subscriber to make a payment towards their account
     function makePayment() payable public {
 
-		}
+    }
 
-		// function that allows the subscriber to make a payment towards their account
-		// without calling the makePayment function, rather just by simply transfering the funds
-		function () external payable {}
+	// function that allows the subscriber to make a payment towards their account
+	// without calling the makePayment function, rather just by simply transfering the funds
+	function () external payable {}
 
     // allows an account to be emptied to the caller of widhdrawBalance
     function withdrawBalance() public {
