@@ -48,6 +48,27 @@ Jednostavni primjeri u solidity-u.
 
 #### Vježbe 9
 
-Solidity funkcije, vidljivost i ponašanjefunkcija.
+Solidity funkcije, vidljivost i ponašanje funkcija.
 
 Zadatak za vježbu nalazi se u [Zadatak_coin](vj_9/Zadatak_coin.md)
+
+
+
+#### Vježbe 10
+
+Solidity modyfiers i nasljeđivanje.
+
+Sadržaj:
+
+- [Coin.sol](vj_10/Coin.sol) - rješenje prethodnog zadatka ([Zadatak_coin](vj_9/Zadatak_coin.md))
+- [Auction.sol](vj_10/Auction.sol) - primjer korištenja modyfier-a
+- [Payable.sol](vj_10/Payable.sol), [Ownable.sol](vj_10/Ownable.sol), [Destructible.sol](vj_10/Destructible.sol), [Faucet.sol](vj_10/Faucet.sol) - primjer nasljeđivanja
+
+Zadatak za vježbu nalazi se u [Zadatak_upgrade_coin.md](vj_10/Zadatak_upgrade_coin.md)
+
+
+
+
+
+
+
