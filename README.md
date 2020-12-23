@@ -64,7 +64,7 @@ Sadržaj:
 - [Auction.sol](vj_10/Auction.sol) - primjer korištenja modyfier-a
 - [Payable.sol](vj_10/Payable.sol), [Ownable.sol](vj_10/Ownable.sol), [Destructible.sol](vj_10/Destructible.sol), [Faucet.sol](vj_10/Faucet.sol) - primjer nasljeđivanja
 
-Zadatak za vježbu nalazi se u [Zadatak_upgrade_coin.md](vj_10/Zadatak_upgrade_coin.md)
+Zadatak za vježbu nalazi se u [Zadatak_upgrade_coin](vj_10/Zadatak_upgrade_coin.md)
 
 
 
