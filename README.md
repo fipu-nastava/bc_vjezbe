@@ -68,7 +68,13 @@ Zadatak za vježbu nalazi se u [Zadatak_upgrade_coin](vj_10/Zadatak_upgrade_coin
 
 
 
+#### Vježbe 11
 
+[web3.js](https://web3js.readthedocs.io/en/v1.3.0/) primjer spajanja na metamask, slanja transakcija, deploy-anja pametnog ugovora i čitanja statusa transakcija.
+
+
+
+#### 
 
 
 
