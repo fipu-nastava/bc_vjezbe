@@ -74,7 +74,7 @@ Zadatak za vježbu nalazi se u [Zadatak_upgrade_coin](vj_10/Zadatak_upgrade_coin
 
 
 
-#### 
+#### Vježbe 12
 
-
+[web3.js](https://web3js.readthedocs.io/en/v1.3.0/) primjer spajanja na postojeći ugovor i pozivanje funkcija s ugovora
 
