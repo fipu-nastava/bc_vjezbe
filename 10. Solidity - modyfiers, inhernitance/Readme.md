@@ -1,3 +1,4 @@
+<div align="center">
 <table style="caret-color: #000000; font-family: Georgia;" border="0" cellspacing="0" cellpadding="0" >
             <tbody>
               <tr>
@@ -6,14 +7,18 @@
               </tr>
   </tbody>
 </table>
+</div>
 
 
 
-<img src="https://solidity.readthedocs.io/en/v0.5.14/_images/logo.svg" alt="solidity" style="zoom:10%;"/>
+<div align="center">
+  <img src="https://solidity.readthedocs.io/en/v0.5.14/_images/logo.svg" alt="solidity" style="width:25%;"/>
+</div>
+
 
 # [Solidity](https://solidity.readthedocs.io/en/v0.5.14/)
 
-<span style="color:red">Imamo li ovdje problem?</span>  
+<span style="color:red">Imamo li ovdje problem?</span> 
 
 ```php
 function destroy() public {
@@ -40,7 +45,7 @@ function destroy() public {
 
 ## Upravljanje greškama
 
-- ***assert*** 
+- ***assert***
 
   - provjerava uvjet, ukoliko nije istinit, troši preostali gas i vraća stanje ugovora
 
@@ -53,9 +58,9 @@ function destroy() public {
 function destroy() public {
   	// Samo owner može izbrisati ugovor (owner je adresa koja je deployala ugovor)
   	require (msg.sender == owner, "Poruka greške");
-      
+
     selfdestruct(owner);
-    
+
 }
 ```
 
@@ -73,7 +78,7 @@ function destroy() public {
 // Definicija modifiera za provjeru vlasništva
 modifier onlyOwner {
 		require(msg.sender == owner, "Nisi vlasnik!"); // Možemo umetniti i poruku greške
-		_; // Oznaka za umetanje ostatka funkcije 
+		_; // Oznaka za umetanje ostatka funkcije
 }
 
 // Metoda koja će brisati ugovor, ako to modifier onlyOwner dopusti
@@ -92,11 +97,11 @@ uint creationTime = now;
 
 modifier onlyBy(address _account) {
     require(msg.sender == _account, "Sender not authorized.");
-		_; 
+		_;
 }
 
 modifier onlyAfter(uint _time) {
-		require(now >= _time, "Još nije vrijeme."); 
+		require(now >= _time, "Još nije vrijeme.");
   	_;
 }
 
@@ -132,5 +137,5 @@ function die() public onlyBy(owner) onlyAfter(creationTime + 6 weeks) {
   - apstrahirati koncept vlasništva u ugovor **Ownable**
   - apstrahirati koncept povlačenja ugovora u posebnu natklasu **Destructible**
   - Coin ugovor je **Destructible** (samim time i **Ownable**)
-  - dodati funkciju **toZero(kome)** kojom samo vlasnik može poništiti balance (postaviti na 0) korisnika s adresom **kome** 
+  - dodati funkciju **toZero(kome)** kojom samo vlasnik može poništiti balance (postaviti na 0) korisnika s adresom **kome**
   - dodati funkciju **withdraw(iznos)** kojom korisnik može podignuti **iznos**, ali samo ako ima dovoljno sredstava
