@@ -1,7 +1,8 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
 
-import 'Ownable.sol';
-import 'Destructible.sol';
+import './Ownable.sol';
+import './Destructible.sol';
 
 contract Faucet is Destructible {
 
@@ -13,6 +14,6 @@ contract Faucet is Destructible {
         require(withdraw_amount <= 0.1 ether);
 
         // Slanje iznosa na adresu koja je zatražila
-        msg.sender.transfer(withdraw_amount);
+        payable(msg.sender).transfer(withdraw_amount);
     }
 }
