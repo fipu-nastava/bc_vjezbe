@@ -51,3 +51,10 @@ After establishing connections, new node can proceed to participate in the main 
 
 
 ![003](imgs/003.jpeg)
+
+
+Implementation details: modules, communication between modules and the number of goroutines.
+
+![004](imgs/p2p_comms.001.png)
+
+
