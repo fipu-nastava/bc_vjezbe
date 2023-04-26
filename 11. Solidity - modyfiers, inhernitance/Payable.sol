@@ -2,5 +2,5 @@
 pragma solidity ^0.8.7;
 
 contract Payable {
-       function () external payable {}
+       receive() external payable {}
 }
