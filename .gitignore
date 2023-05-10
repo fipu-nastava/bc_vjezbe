@@ -1,5 +1,6 @@
 *.DS_Store
 old/*
+blic/*
 
 # Binaries for programs and plugins
 *.exe

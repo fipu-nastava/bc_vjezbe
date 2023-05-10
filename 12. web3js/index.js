@@ -8,11 +8,10 @@ async function init() {
         window.web3 = new Web3(new Web3.providers.HttpProvider(rpc));
     }
     else {
-        // MetaMask
-        rpc = "MetaMask";
+        // Available wallet provider such as MetaMask
         window.web3 = new Web3(Web3.givenProvider);
     }
-    await window.web3.currentProvider.enable();
+    // await window.web3.currentProvider.enable();
 
 
     web3.eth.getAccounts()
