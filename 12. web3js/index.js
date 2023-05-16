@@ -11,7 +11,7 @@ async function init() {
         // Available wallet provider such as MetaMask
         window.web3 = new Web3(Web3.givenProvider);
     }
-    // await window.web3.currentProvider.enable();
+    await window.web3.currentProvider.enable();
 
 
     web3.eth.getAccounts()
